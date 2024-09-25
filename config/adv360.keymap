@@ -38,11 +38,11 @@
 
         default_layer {
             bindings = <
-&kp EQUAL         &kp N1     &kp N2    &kp N3    &kp N4     &kp N5  &tog 1                                                           &mo 3      &kp N6  &kp N7          &kp N8        &kp N9    &kp N0    &kp MINUS
+&kp EQUAL         &kp N1     &kp N2    &kp N3    &kp N4     &kp N5  &mo 4                                                            &mo 3      &kp N6  &kp N7          &kp N8        &kp N9    &kp N0    &kp MINUS
 &kp TAB           &kp Q      &kp W     &kp E     &kp R      &kp T   &none                                                            &none      &kp Y   &kp U           &kp I         &kp O     &kp P     &kp BSLH
 &mt LCTRL ESCAPE  &kp A      &kp S     &kp D     &kp F      &kp G   &none     &kp LCTRL  &kp LALT          &kp LGUI       &kp RCTRL  &none      &kp H   &kp J           &kp K         &kp L     &kp SEMI  &kp SQT
 &kp LSHFT         &kp Z      &kp X     &kp C     &kp V      &kp B                        &kp HOME          &kp PG_UP                            &kp N   &kp M           &kp COMMA     &kp DOT   &kp FSLH  &kp RSHFT
-&mo 2             &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT          &kp BSPC  &kp DEL    &kp LEFT_GUI      &kp PAGE_DOWN  &kp ENTER  &kp SPACE          &kp DOWN_ARROW  &kp UP_ARROW  &kp LBKT  &kp RBKT  &mo 2
+&mo 2             &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT          &kp BSPC  &mo 4      &kp LEFT_GUI      &kp PAGE_DOWN  &kp ENTER  &kp SPACE          &kp DOWN_ARROW  &kp UP_ARROW  &kp LBKT  &kp RBKT  &mo 2
             >;
         };
 
@@ -73,6 +73,16 @@
 &none  &none         &none         &none         &none         &none         &none        &none  &none      &bt BT_CLR  &none       &rgb_ug RGB_MEFS_CMD 5  &none  &none       &none       &none  &none  &none
 &none  &none         &none         &none         &macro_ver    &none                             &none      &none                                           &none  &none       &none       &none  &none  &none
 &none  &none         &none         &none         &none                       &none        &none  &none      &none       &bl BL_TOG  &rgb_ug RGB_TOG                &bl BL_INC  &bl BL_DEC  &none  &none  &none
+            >;
+        };
+
+        symbols {
+            bindings = <
+&trans  &trans           &trans         &trans            &trans         &trans     &trans                                      &trans  &trans         &trans         &trans                &trans                 &trans        &trans
+&trans  &kp CARET        &kp LESS_THAN  &kp GREATER_THAN  &kp UNDER      &trans     &trans                                      &trans  &kp AMPERSAND  &kp PERCENT    &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp DOLLAR    &trans
+&trans  &kp EXCLAMATION  &kp MINUS      &kp PLUS          &kp EQUAL      &kp POUND  &trans  &trans  &trans      &trans  &trans  &trans  &kp PIPE       &kp COLON      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp QUESTION  &trans
+&trans  &trans           &kp SLASH      &kp ASTRK         &kp BACKSLASH  &trans                     &trans      &trans                  &kp TILDE      &kp DOLLAR     &kp LEFT_BRACKET      &kp LEFT_BRACKET       &kp AT_SIGN   &trans
+&trans  &trans           &trans         &trans            &trans                    &trans  &trans  &trans      &trans  &trans  &trans                 &kp PAGE_DOWN  &kp PAGE_UP           &trans                 &trans        &trans
             >;
         };
     };
